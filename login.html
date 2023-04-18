@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Chat_WEB</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <script src="login.js"></script>
+    </head>
+
+    <center>
+    <body>
+        <p style=" background-image: url(Screenshot\ 2023-04-14\ 122453.png);"></p>
+
+        <style>
+            body {
+                background-image: url(Screenshot\ 2023-04-14\ 124241.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+
+                margin-top: 185px;
+            }
+
+            .container, .border {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                background: linear-gradient(to right, #f32170,
+                        #ff3333, #0400ff, #fffc31);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                border-color: whitesmoke;
+                border-width: 10px;
+            }
+
+            #login_button {
+                margin-top: 30px;
+            }
+        </style>
+        
+        <div class="container">
+            <h1 style="font-size: 100px;">Lets Chatt App</h1>
+            <br>
+            <input type="text" id="user_name" class="form-control, container" placeholder="User Name" style="font-size: 40px;">
+            <br>
+            <button id="login_button" class="btn btn-primary, border" style="font-size: 30px;" onclick="addUser()">Login</button>
+        </div>
+            
+
+    </body>
+    </center>
+</html>
